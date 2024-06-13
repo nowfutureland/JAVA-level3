@@ -1,0 +1,29 @@
+package sw212;
+
+public class Phone {
+	public String 모델;
+	public String 색상;
+	
+	Phone(String 모델, String 색상){
+		System.out.println("Phone() 생성자 실행");
+		this.모델 = 모델;
+		this.색상 = 색상;
+	}
+	
+	//메소드 선언
+	public void bell() {
+		System.out.println("벨이 울립니다.");
+	}
+	
+	public void sendVoice(String message) {
+		System.out.println("본인: "+message);
+	}
+	
+	public void receiveVoice(String message) {
+		System.out.println("상대방: "+message);
+	}
+	
+	public void hangUp() {
+		System.out.println("전화를 끊습니다.");
+	}	
+}
